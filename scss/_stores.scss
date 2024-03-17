@@ -1,0 +1,40 @@
+.stores {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 5rem;
+
+  .rtl {
+    direction: rtl;
+
+    .story-text {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: self-end;
+    }
+  }
+
+  .story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+
+    .story-text {
+      width: 50rem;
+
+      .title {
+        font-size: 5rem;
+      }
+
+      .text {
+        font-size: 2rem;
+        color: $gray-text;
+        width: 70%;
+      }
+    }
+  }
+}

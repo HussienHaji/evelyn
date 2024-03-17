@@ -1,0 +1,36 @@
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100%;
+  margin-bottom: 20rem;
+  .box {
+    width: 100%;
+    margin: 0 5rem;
+    height: 40rem;
+    border-radius: 0.2rem;
+    box-shadow: $btn-box-shadow;
+    background-color: $gray;
+  }
+  .brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    img {
+      width: 20rem;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width:400px) {
+  .clients{
+    .brands{
+      justify-content: center;
+    }
+  }
+}
